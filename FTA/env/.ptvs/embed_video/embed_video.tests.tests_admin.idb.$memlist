@@ -1,0 +1,9 @@
+EmbedVideoField
+EmbedVideoFormField
+AdminVideoMixin
+SimpleTestCase
+AdminVideoWidget
+AdminVideoMixinTestCase
+AdminVideoWidgetTestCase
+TestCase
+VimeoBackend

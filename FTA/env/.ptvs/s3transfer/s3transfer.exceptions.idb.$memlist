@@ -1,0 +1,6 @@
+FatalError
+RetriesExceededError
+S3UploadFailedError
+TransferNotDoneError
+InvalidSubscriberMethodError
+CancelledError

@@ -1,0 +1,13 @@
+ResendActivationForm
+User
+RegistrationFormUsernameLowercase
+UsernameField
+UserModel
+_
+RegistrationFormNoFreeEmail
+RegistrationFormTermsOfService
+UserCreationForm
+unicode_literals
+RegistrationForm
+RegistrationFormUniqueEmail
+forms

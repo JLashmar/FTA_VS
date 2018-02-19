@@ -1,0 +1,15 @@
+FormView
+method_decorator
+ACCOUNT_AUTHENTICATED_REGISTRATION_REDIRECTS
+ActivationView
+ResendActivationForm
+RegistrationView
+ApprovalView
+import_string
+ResendActivationView
+sensitive_post_parameters
+TemplateView
+REGISTRATION_FORM_PATH
+REGISTRATION_FORM
+redirect
+settings

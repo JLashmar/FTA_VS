@@ -1,0 +1,7 @@
+override_settings
+TestCase
+UserModel
+RegistrationForm
+SimpleBackendViewTests
+reverse
+settings

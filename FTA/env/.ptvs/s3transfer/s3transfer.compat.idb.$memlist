@@ -1,0 +1,12 @@
+readable
+seekable
+six
+rename_file
+socket
+inspect
+accepts_kwargs
+SOCKET_ERROR
+os
+MAXINT
+errno
+sys

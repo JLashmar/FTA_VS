@@ -1,0 +1,6 @@
+render_alert
+add_css_class
+unicode_literals
+mark_safe
+text_value
+render_tag

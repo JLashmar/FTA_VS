@@ -1,0 +1,10 @@
+templatetags
+get_release
+VERSION
+__version__
+settings
+get_version
+backends
+fields
+admin
+utils

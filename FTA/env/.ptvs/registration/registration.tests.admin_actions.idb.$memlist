@@ -1,0 +1,10 @@
+mail
+override_settings
+RegistrationProfile
+unicode_literals
+helpers
+AdminCustomActionsTestCase
+UserModel
+TestCase
+Client
+reverse

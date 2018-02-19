@@ -1,0 +1,24 @@
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Competition
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+    <ul>
+      {% if country_slug == None %}
+        {% for info in all_competition %}
+            <li><a href="{% url sport_menu.sport_slug|add:':competition' info.country.country_slug info.competition_slug %}">
+                  <img src="{{info.country.flag.url}}" alt="">
+                  {{info.name}}
+                </a></li>
+        {% endfor %}
+        {% else %}
+      {% endif %}
+      {% if path.contains == country_slug %}
+        {% for comp in country_competition_info %}
+            <li><a href="{% url sport_menu.sport_slug|add:':competition' comp.country.country_slug comp.competition_slug %}">
+                  {{comp.name}}
+                </a></li>
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </div>

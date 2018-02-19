@@ -1,0 +1,7 @@
+override_settings
+AdminApprovalBackendViewTests
+UserModel
+SupervisedRegistrationProfile
+DefaultBackendViewTests
+reverse
+RegistrationView

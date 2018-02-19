@@ -1,0 +1,7 @@
+six
+TestCase
+django
+RegistrationFormTests
+UserModel
+unicode_literals
+forms

@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>FTA</Name>
+    <RootNamespace>FTA</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>cbc85457-e5a7-40ef-8a09-3e19cd54e21c</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>FTA.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="articles\admin.py" />
+    <Compile Include="articles\api\serializers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="articles\api\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="articles\api\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="articles\apps.py" />
+    <Compile Include="articles\migrations\__init__.py" />
+    <Compile Include="articles\models.py" />
+    <Compile Include="articles\templates\articles\details.html">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="articles\tests.py" />
+    <Compile Include="articles\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="articles\views.py" />
+    <Compile Include="articles\__init__.py" />
+    <Compile Include="athletes\admin.py" />
+    <Compile Include="athletes\apps.py" />
+    <Compile Include="athletes\migrations\__init__.py" />
+    <Compile Include="athletes\models.py" />
+    <Compile Include="athletes\tests.py" />
+    <Compile Include="athletes\views.py" />
+    <Compile Include="athletes\__init__.py" />
+    <Compile Include="context_processors\menu\context_processors.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="manage.py" />
+    <Compile Include="FTA\__init__.py" />
+    <Compile Include="FTA\settings.py" />
+    <Compile Include="FTA\urls.py" />
+    <Compile Include="FTA\wsgi.py" />
+    <Compile Include="nations\admin.py" />
+    <Compile Include="nations\apps.py" />
+    <Compile Include="nations\migrations\__init__.py" />
+    <Compile Include="nations\models.py" />
+    <Compile Include="nations\tests.py" />
+    <Compile Include="nations\views.py" />
+    <Compile Include="nations\__init__.py" />
+    <Compile Include="sports\admin.py" />
+    <Compile Include="sports\apps.py" />
+    <Compile Include="sports\migrations\__init__.py" />
+    <Compile Include="sports\models.py" />
+    <Compile Include="sports\tests.py" />
+    <Compile Include="sports\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sports\views.py" />
+    <Compile Include="sports\__init__.py" />
+    <Compile Include="teams\admin.py" />
+    <Compile Include="teams\api\serializers.py" />
+    <Compile Include="teams\api\urls.py" />
+    <Compile Include="teams\api\views.py" />
+    <Compile Include="teams\apps.py" />
+    <Compile Include="teams\migrations\__init__.py" />
+    <Compile Include="teams\models.py" />
+    <Compile Include="teams\tests.py" />
+    <Compile Include="teams\views.py" />
+    <Compile Include="teams\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="articles\" />
+    <Folder Include="articles\migrations\" />
+    <Folder Include="articles\api\" />
+    <Folder Include="articles\templates\" />
+    <Folder Include="articles\templates\articles\" />
+    <Folder Include="athletes\" />
+    <Folder Include="athletes\migrations\" />
+    <Folder Include="athletes\templates\" />
+    <Folder Include="context_processors\menu\" />
+    <Folder Include="FTA\" />
+    <Folder Include="media\" />
+    <Folder Include="context_processors\" />
+    <Folder Include="nations\" />
+    <Folder Include="nations\migrations\" />
+    <Folder Include="nations\migrations\old\" />
+    <Folder Include="nations\migrations\__pycache__\" />
+    <Folder Include="nations\templates\" />
+    <Folder Include="nations\__pycache__\" />
+    <Folder Include="sports\" />
+    <Folder Include="sports\migrations\" />
+    <Folder Include="C:\Users\Jordan\source\repos\FTA\FTA\sports\api\" />
+    <Folder Include="sports\templates\" />
+    <Folder Include="sports\templates\sports\" />
+    <Folder Include="static\" />
+    <Folder Include="static\admin\" />
+    <Folder Include="static\admin\css\" />
+    <Folder Include="static\admin\css\vendor\" />
+    <Folder Include="static\admin\css\vendor\select2\" />
+    <Folder Include="static\admin\fonts\" />
+    <Folder Include="static\admin\img\" />
+    <Folder Include="static\admin\img\gis\" />
+    <Folder Include="static\admin\js\" />
+    <Folder Include="static\admin\js\admin\" />
+    <Folder Include="static\admin\js\vendor\" />
+    <Folder Include="static\admin\js\vendor\jquery\" />
+    <Folder Include="static\admin\js\vendor\select2\" />
+    <Folder Include="static\admin\js\vendor\select2\i18n\" />
+    <Folder Include="static\admin\js\vendor\xregexp\" />
+    <Folder Include="static\app\" />
+    <Folder Include="static\app\content\" />
+    <Folder Include="static\app\fonts\" />
+    <Folder Include="static\app\scripts\" />
+    <Folder Include="static\css\" />
+    <Folder Include="static\css\old\" />
+    <Folder Include="static\flags\" />
+    <Folder Include="static\font-awesome\" />
+    <Folder Include="static\font-awesome\font-awesome-4.7.0\" />
+    <Folder Include="static\font-awesome\font-awesome-4.7.0\css\" />
+    <Folder Include="static\font-awesome\font-awesome-4.7.0\fonts\" />
+    <Folder Include="static\font-awesome\font-awesome-4.7.0\less\" />
+    <Folder Include="static\font-awesome\font-awesome-4.7.0\scss\" />
+    <Folder Include="static\img\" />
+    <Folder Include="static\js\" />
+    <Folder Include="static\sass\" />
+    <Folder Include="static\sass\old\" />
+    <Folder Include="teams\" />
+    <Folder Include="teams\api\" />
+    <Folder Include="teams\migrations\" />
+    <Folder Include="teams\templates\" />
+    <Folder Include="templates\" />
+    <Folder Include="templates\articles\" />
+    <Folder Include="templates\submenu\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="articles\templates\articles\index.html" />
+    <Content Include="athletes\templates\index.html" />
+    <Content Include="nations\migrations\__pycache__\0001_initial.cpython-36.pyc" />
+    <Content Include="nations\migrations\__pycache__\0002_auto_20171230_1217.cpython-36.pyc" />
+    <Content Include="nations\migrations\__pycache__\0003_auto_20180103_1202.cpython-36.pyc" />
+    <Content Include="nations\migrations\__pycache__\0003_country_data_sport.cpython-36.pyc" />
+    <Content Include="nations\migrations\__pycache__\0004_auto_20180103_1203.cpython-36.pyc" />
+    <Content Include="nations\migrations\__pycache__\0004_auto_20180107_1404.cpython-36.pyc" />
+    <Content Include="nations\migrations\__pycache__\0005_country_data_category.cpython-36.pyc" />
+    <Content Include="nations\migrations\__pycache__\0006_auto_20180108_1217.cpython-36.pyc" />
+    <Content Include="nations\migrations\__pycache__\0007_auto_20180108_1218.cpython-36.pyc" />
+    <Content Include="nations\migrations\__pycache__\0008_remove_country_data_category.cpython-36.pyc" />
+    <Content Include="nations\migrations\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="nations\__pycache__\admin.cpython-36.pyc" />
+    <Content Include="nations\__pycache__\models.cpython-36.pyc" />
+    <Content Include="nations\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="sports\templates\sports\sport-home.html" />
+    <Content Include="static\admin\css\autocomplete.css" />
+    <Content Include="static\admin\css\base.css" />
+    <Content Include="static\admin\css\changelists.css" />
+    <Content Include="static\admin\css\dashboard.css" />
+    <Content Include="static\admin\css\fonts.css" />
+    <Content Include="static\admin\css\forms.css" />
+    <Content Include="static\admin\css\login.css" />
+    <Content Include="static\admin\css\responsive.css" />
+    <Content Include="static\admin\css\responsive_rtl.css" />
+    <Content Include="static\admin\css\rtl.css" />
+    <Content Include="static\admin\css\vendor\select2\LICENSE-SELECT2.md" />
+    <Content Include="static\admin\css\vendor\select2\select2.css" />
+    <Content Include="static\admin\css\vendor\select2\select2.min.css" />
+    <Content Include="static\admin\css\widgets.css" />
+    <Content Include="static\admin\fonts\LICENSE.txt" />
+    <Content Include="static\admin\fonts\README.txt" />
+    <Content Include="static\admin\fonts\Roboto-Bold-webfont.woff" />
+    <Content Include="static\admin\fonts\Roboto-Light-webfont.woff" />
+    <Content Include="static\admin\fonts\Roboto-Regular-webfont.woff" />
+    <Content Include="static\admin\img\calendar-icons.svg" />
+    <Content Include="static\admin\img\gis\move_vertex_off.svg" />
+    <Content Include="static\admin\img\gis\move_vertex_on.svg" />
+    <Content Include="static\admin\img\icon-addlink.svg" />
+    <Content Include="static\admin\img\icon-alert.svg" />
+    <Content Include="static\admin\img\icon-calendar.svg" />
+    <Content Include="static\admin\img\icon-changelink.svg" />
+    <Content Include="static\admin\img\icon-clock.svg" />
+    <Content Include="static\admin\img\icon-deletelink.svg" />
+    <Content Include="static\admin\img\icon-no.svg" />
+    <Content Include="static\admin\img\icon-unknown-alt.svg" />
+    <Content Include="static\admin\img\icon-unknown.svg" />
+    <Content Include="static\admin\img\icon-yes.svg" />
+    <Content Include="static\admin\img\inline-delete.svg" />
+    <Content Include="static\admin\img\LICENSE" />
+    <Content Include="static\admin\img\README.txt" />
+    <Content Include="static\admin\img\search.svg" />
+    <Content Include="static\admin\img\selector-icons.svg" />
+    <Content Include="static\admin\img\sorting-icons.svg" />
+    <Content Include="static\admin\img\tooltag-add.svg" />
+    <Content Include="static\admin\img\tooltag-arrowright.svg" />
+    <Content Include="static\admin\js\actions.js" />
+    <Content Include="static\admin\js\actions.min.js" />
+    <Content Include="static\admin\js\admin\DateTimeShortcuts.js" />
+    <Content Include="static\admin\js\admin\RelatedObjectLookups.js" />
+    <Content Include="static\admin\js\autocomplete.js" />
+    <Content Include="static\admin\js\calendar.js" />
+    <Content Include="static\admin\js\cancel.js" />
+    <Content Include="static\admin\js\change_form.js" />
+    <Content Include="static\admin\js\collapse.js" />
+    <Content Include="static\admin\js\collapse.min.js" />
+    <Content Include="static\admin\js\core.js" />
+    <Content Include="static\admin\js\inlines.js" />
+    <Content Include="static\admin\js\inlines.min.js" />
+    <Content Include="static\admin\js\jquery.init.js" />
+    <Content Include="static\admin\js\popup_response.js" />
+    <Content Include="static\admin\js\prepopulate.js" />
+    <Content Include="static\admin\js\prepopulate.min.js" />
+    <Content Include="static\admin\js\prepopulate_init.js" />
+    <Content Include="static\admin\js\SelectBox.js" />
+    <Content Include="static\admin\js\SelectFilter2.js" />
+    <Content Include="static\admin\js\timeparse.js" />
+    <Content Include="static\admin\js\urlify.js" />
+    <Content Include="static\admin\js\vendor\jquery\jquery.js" />
+    <Content Include="static\admin\js\vendor\jquery\jquery.min.js" />
+    <Content Include="static\admin\js\vendor\jquery\LICENSE-JQUERY.txt" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ar.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\az.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\bg.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ca.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\cs.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\da.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\de.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\el.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\en.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\es.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\et.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\eu.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\fa.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\fi.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\fr.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\gl.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\he.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\hi.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\hr.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\hu.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\id.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\is.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\it.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ja.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\km.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ko.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\lt.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\lv.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\mk.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ms.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\nb.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\nl.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\pl.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\pt-BR.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\pt.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ro.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ru.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\sk.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\sr-Cyrl.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\sr.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\sv.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\th.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\tr.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\uk.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\vi.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\zh-CN.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\zh-TW.js" />
+    <Content Include="static\admin\js\vendor\select2\LICENSE-SELECT2.md" />
+    <Content Include="static\admin\js\vendor\select2\select2.full.js" />
+    <Content Include="static\admin\js\vendor\select2\select2.full.min.js" />
+    <Content Include="static\admin\js\vendor\xregexp\LICENSE-XREGEXP.txt" />
+    <Content Include="static\admin\js\vendor\xregexp\xregexp.js" />
+    <Content Include="static\admin\js\vendor\xregexp\xregexp.min.js" />
+    <Content Include="static\app\content\bootstrap.css" />
+    <Content Include="static\app\content\bootstrap.min.css" />
+    <Content Include="static\app\content\site.css" />
+    <Content Include="static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="static\app\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="static\app\scripts\_references.js" />
+    <Content Include="static\app\scripts\bootstrap.js" />
+    <Content Include="static\app\scripts\bootstrap.min.js" />
+    <None Include="static\app\scripts\jquery.validate-vsdoc.js" />
+    <None Include="static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="static\app\scripts\jquery-1.10.2.min.map" />
+    <Content Include="static\app\scripts\jquery.validate.js" />
+    <Content Include="static\app\scripts\jquery.validate.min.js" />
+    <Content Include="static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="static\app\scripts\respond.js" />
+    <Content Include="static\app\scripts\respond.min.js" />
+    <Content Include="static\css\main-style.css" />
+    <Content Include="static\css\main-style.css.map" />
+    <Content Include="static\flags\ad.gif" />
+    <Content Include="static\flags\ae.gif" />
+    <Content Include="static\flags\af.gif" />
+    <Content Include="static\flags\ag.gif" />
+    <Content Include="static\flags\ai.gif" />
+    <Content Include="static\flags\al.gif" />
+    <Content Include="static\flags\am.gif" />
+    <Content Include="static\flags\ao.gif" />
+    <Content Include="static\flags\aq.gif" />
+    <Content Include="static\flags\ar.gif" />
+    <Content Include="static\flags\as.gif" />
+    <Content Include="static\flags\at.gif" />
+    <Content Include="static\flags\au.gif" />
+    <Content Include="static\flags\aw.gif" />
+    <Content Include="static\flags\ax.gif" />
+    <Content Include="static\flags\az.gif" />
+    <Content Include="static\flags\ba.gif" />
+    <Content Include="static\flags\bb.gif" />
+    <Content Include="static\flags\bd.gif" />
+    <Content Include="static\flags\be.gif" />
+    <Content Include="static\flags\bf.gif" />
+    <Content Include="static\flags\bg.gif" />
+    <Content Include="static\flags\bh.gif" />
+    <Content Include="static\flags\bi.gif" />
+    <Content Include="static\flags\bj.gif" />
+    <Content Include="static\flags\bl.gif" />
+    <Content Include="static\flags\bm.gif" />
+    <Content Include="static\flags\bn.gif" />
+    <Content Include="static\flags\bo.gif" />
+    <Content Include="static\flags\bq.gif" />
+    <Content Include="static\flags\br.gif" />
+    <Content Include="static\flags\bs.gif" />
+    <Content Include="static\flags\bt.gif" />
+    <Content Include="static\flags\bv.gif" />
+    <Content Include="static\flags\bw.gif" />
+    <Content Include="static\flags\by.gif" />
+    <Content Include="static\flags\bz.gif" />
+    <Content Include="static\flags\ca.gif" />
+    <Content Include="static\flags\cc.gif" />
+    <Content Include="static\flags\cd.gif" />
+    <Content Include="static\flags\cf.gif" />
+    <Content Include="static\flags\cg.gif" />
+    <Content Include="static\flags\ch.gif" />
+    <Content Include="static\flags\ci.gif" />
+    <Content Include="static\flags\ck.gif" />
+    <Content Include="static\flags\cl.gif" />
+    <Content Include="static\flags\cm.gif" />
+    <Content Include="static\flags\cn.gif" />
+    <Content Include="static\flags\co.gif" />
+    <Content Include="static\flags\cr.gif" />
+    <Content Include="static\flags\cu.gif" />
+    <Content Include="static\flags\cv.gif" />
+    <Content Include="static\flags\cw.gif" />
+    <Content Include="static\flags\cx.gif" />
+    <Content Include="static\flags\cy.gif" />
+    <Content Include="static\flags\cz.gif" />
+    <Content Include="static\flags\de.gif" />
+    <Content Include="static\flags\dj.gif" />
+    <Content Include="static\flags\dk.gif" />
+    <Content Include="static\flags\dm.gif" />
+    <Content Include="static\flags\do.gif" />
+    <Content Include="static\flags\dz.gif" />
+    <Content Include="static\flags\ec.gif" />
+    <Content Include="static\flags\ee.gif" />
+    <Content Include="static\flags\eg.gif" />
+    <Content Include="static\flags\eh.gif" />
+    <Content Include="static\flags\en.gif" />
+    <Content Include="static\flags\er.gif" />
+    <Content Include="static\flags\es.gif" />
+    <Content Include="static\flags\et.gif" />
+    <Content Include="static\flags\eu.gif" />
+    <Content Include="static\flags\fi.gif" />
+    <Content Include="static\flags\fj.gif" />
+    <Content Include="static\flags\fk.gif" />
+    <Content Include="static\flags\fm.gif" />
+    <Content Include="static\flags\fo.gif" />
+    <Content Include="static\flags\fr.gif" />
+    <Content Include="static\flags\ga.gif" />
+    <Content Include="static\flags\gb.gif" />
+    <Content Include="static\flags\gd.gif" />
+    <Content Include="static\flags\ge.gif" />
+    <Content Include="static\flags\gf.gif" />
+    <Content Include="static\flags\gg.gif" />
+    <Content Include="static\flags\gh.gif" />
+    <Content Include="static\flags\gi.gif" />
+    <Content Include="static\flags\gl.gif" />
+    <Content Include="static\flags\gm.gif" />
+    <Content Include="static\flags\gn.gif" />
+    <Content Include="static\flags\gp.gif" />
+    <Content Include="static\flags\gq.gif" />
+    <Content Include="static\flags\gr.gif" />
+    <Content Include="static\flags\gs.gif" />
+    <Content Include="static\flags\gt.gif" />
+    <Content Include="static\flags\gu.gif" />
+    <Content Include="static\flags\gw.gif" />
+    <Content Include="static\flags\gy.gif" />
+    <Content Include="static\flags\hk.gif" />
+    <Content Include="static\flags\hm.gif" />
+    <Content Include="static\flags\hn.gif" />
+    <Content Include="static\flags\hr.gif" />
+    <Content Include="static\flags\ht.gif" />
+    <Content Include="static\flags\hu.gif" />
+    <Content Include="static\flags\id.gif" />
+    <Content Include="static\flags\ie.gif" />
+    <Content Include="static\flags\il.gif" />
+    <Content Include="static\flags\im.gif" />
+    <Content Include="static\flags\in.gif" />
+    <Content Include="static\flags\io.gif" />
+    <Content Include="static\flags\iq.gif" />
+    <Content Include="static\flags\ir.gif" />
+    <Content Include="static\flags\is.gif" />
+    <Content Include="static\flags\it.gif" />
+    <Content Include="static\flags\je.gif" />
+    <Content Include="static\flags\jm.gif" />
+    <Content Include="static\flags\jo.gif" />
+    <Content Include="static\flags\jp.gif" />
+    <Content Include="static\flags\ke.gif" />
+    <Content Include="static\flags\kg.gif" />
+    <Content Include="static\flags\kh.gif" />
+    <Content Include="static\flags\ki.gif" />
+    <Content Include="static\flags\km.gif" />
+    <Content Include="static\flags\kn.gif" />
+    <Content Include="static\flags\kp.gif" />
+    <Content Include="static\flags\kr.gif" />
+    <Content Include="static\flags\kw.gif" />
+    <Content Include="static\flags\ky.gif" />
+    <Content Include="static\flags\kz.gif" />
+    <Content Include="static\flags\la.gif" />
+    <Content Include="static\flags\lb.gif" />
+    <Content Include="static\flags\lc.gif" />
+    <Content Include="static\flags\li.gif" />
+    <Content Include="static\flags\lk.gif" />
+    <Content Include="static\flags\lr.gif" />
+    <Content Include="static\flags\ls.gif" />
+    <Content Include="static\flags\lt.gif" />
+    <Content Include="static\flags\lu.gif" />
+    <Content Include="static\flags\lv.gif" />
+    <Content Include="static\flags\ly.gif" />
+    <Content Include="static\flags\ma.gif" />
+    <Content Include="static\flags\mc.gif" />
+    <Content Include="static\flags\md.gif" />
+    <Content Include="static\flags\me.gif" />
+    <Content Include="static\flags\mf.gif" />
+    <Content Include="static\flags\mg.gif" />
+    <Content Include="static\flags\mh.gif" />
+    <Content Include="static\flags\mk.gif" />
+    <Content Include="static\flags\ml.gif" />
+    <Content Include="static\flags\mm.gif" />
+    <Content Include="static\flags\mn.gif" />
+    <Content Include="static\flags\mo.gif" />
+    <Content Include="static\flags\mp.gif" />
+    <Content Include="static\flags\mq.gif" />
+    <Content Include="static\flags\mr.gif" />
+    <Content Include="static\flags\ms.gif" />
+    <Content Include="static\flags\mt.gif" />
+    <Content Include="static\flags\mu.gif" />
+    <Content Include="static\flags\mv.gif" />
+    <Content Include="static\flags\mw.gif" />
+    <Content Include="static\flags\mx.gif" />
+    <Content Include="static\flags\my.gif" />
+    <Content Include="static\flags\mz.gif" />
+    <Content Include="static\flags\na.gif" />
+    <Content Include="static\flags\nc.gif" />
+    <Content Include="static\flags\ne.gif" />
+    <Content Include="static\flags\nf.gif" />
+    <Content Include="static\flags\ng.gif" />
+    <Content Include="static\flags\ni.gif" />
+    <Content Include="static\flags\nl.gif" />
+    <Content Include="static\flags\no.gif" />
+    <Content Include="static\flags\np.gif" />
+    <Content Include="static\flags\nr.gif" />
+    <Content Include="static\flags\nu.gif" />
+    <Content Include="static\flags\nz.gif" />
+    <Content Include="static\flags\om.gif" />
+    <Content Include="static\flags\pa.gif" />
+    <Content Include="static\flags\pe.gif" />
+    <Content Include="static\flags\pf.gif" />
+    <Content Include="static\flags\pg.gif" />
+    <Content Include="static\flags\ph.gif" />
+    <Content Include="static\flags\pk.gif" />
+    <Content Include="static\flags\pl.gif" />
+    <Content Include="static\flags\pm.gif" />
+    <Content Include="static\flags\pn.gif" />
+    <Content Include="static\flags\pr.gif" />
+    <Content Include="static\flags\ps.gif" />
+    <Content Include="static\flags\pt.gif" />
+    <Content Include="static\flags\pw.gif" />
+    <Content Include="static\flags\py.gif" />
+    <Content Include="static\flags\qa.gif" />
+    <Content Include="static\flags\re.gif" />
+    <Content Include="static\flags\ro.gif" />
+    <Content Include="static\flags\rs.gif" />
+    <Content Include="static\flags\ru.gif" />
+    <Content Include="static\flags\rw.gif" />
+    <Content Include="static\flags\sa.gif" />
+    <Content Include="static\flags\sb.gif" />
+    <Content Include="static\flags\sc.gif" />
+    <Content Include="static\flags\sd.gif" />
+    <Content Include="static\flags\se.gif" />
+    <Content Include="static\flags\sg.gif" />
+    <Content Include="static\flags\sh.gif" />
+    <Content Include="static\flags\si.gif" />
+    <Content Include="static\flags\sj.gif" />
+    <Content Include="static\flags\sk.gif" />
+    <Content Include="static\flags\sl.gif" />
+    <Content Include="static\flags\sm.gif" />
+    <Content Include="static\flags\sn.gif" />
+    <Content Include="static\flags\so.gif" />
+    <Content Include="static\flags\sprite-hq.css" />
+    <Content Include="static\flags\sprite-hq.png" />
+    <Content Include="static\flags\sprite.css" />
+    <Content Include="static\flags\sprite.png" />
+    <Content Include="static\flags\sr.gif" />
+    <Content Include="static\flags\ss.gif" />
+    <Content Include="static\flags\st.gif" />
+    <Content Include="static\flags\sv.gif" />
+    <Content Include="static\flags\sx.gif" />
+    <Content Include="static\flags\sy.gif" />
+    <Content Include="static\flags\sz.gif" />
+    <Content Include="static\flags\tc.gif" />
+    <Content Include="static\flags\td.gif" />
+    <Content Include="static\flags\tf.gif" />
+    <Content Include="static\flags\tg.gif" />
+    <Content Include="static\flags\th.gif" />
+    <Content Include="static\flags\tj.gif" />
+    <Content Include="static\flags\tk.gif" />
+    <Content Include="static\flags\tl.gif" />
+    <Content Include="static\flags\tm.gif" />
+    <Content Include="static\flags\tn.gif" />
+    <Content Include="static\flags\to.gif" />
+    <Content Include="static\flags\tr.gif" />
+    <Content Include="static\flags\tt.gif" />
+    <Content Include="static\flags\tv.gif" />
+    <Content Include="static\flags\tw.gif" />
+    <Content Include="static\flags\tz.gif" />
+    <Content Include="static\flags\ua.gif" />
+    <Content Include="static\flags\ug.gif" />
+    <Content Include="static\flags\um.gif" />
+    <Content Include="static\flags\us.gif" />
+    <Content Include="static\flags\uy.gif" />
+    <Content Include="static\flags\uz.gif" />
+    <Content Include="static\flags\va.gif" />
+    <Content Include="static\flags\vc.gif" />
+    <Content Include="static\flags\ve.gif" />
+    <Content Include="static\flags\vg.gif" />
+    <Content Include="static\flags\vi.gif" />
+    <Content Include="static\flags\vn.gif" />
+    <Content Include="static\flags\vu.gif" />
+    <Content Include="static\flags\wf.gif" />
+    <Content Include="static\flags\ws.gif" />
+    <Content Include="static\flags\ye.gif" />
+    <Content Include="static\flags\yt.gif" />
+    <Content Include="static\flags\za.gif" />
+    <Content Include="static\flags\zm.gif" />
+    <Content Include="static\flags\zw.gif" />
+    <Content Include="static\flags\__.gif" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\css\mixins.css" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\css\variables.css" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\less\core.less" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\less\list.less" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\less\path.less" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\font-awesome.css" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\font-awesome.css.map" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="static\font-awesome\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="static\js\competition-table.js" />
+    <Content Include="static\sass\main-style.scss" />
+    <Content Include="static\sass\_article-cards.sass" />
+    <Content Include="static\sass\_article-pages.sass" />
+    <Content Include="static\sass\_buttons.sass" />
+    <Content Include="static\sass\_carousel.sass" />
+    <Content Include="static\sass\_fta-colors.sass" />
+    <Content Include="static\sass\_navbar.sass" />
+    <Content Include="static\sass\_text.sass" />
+    <Content Include="static\sass\_top-headline.sass" />
+    <Content Include="teams\templates\index.html" />
+    <Content Include="templates\articles\post_list.html" />
+    <Content Include="templates\base.html" />
+    <Content Include="templates\hivemind-question.txt" />
+    <Content Include="templates\main_menu.html" />
+    <Content Include="templates\submenu\competition.html" />
+    <Content Include="templates\submenu\country.html" />
+    <Content Include="templates\sub_menu.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.6</Version>
+      <Description>env (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

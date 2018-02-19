@@ -1,0 +1,17 @@
+hi
+
+I'm having a design problem and I cant work it out. I would like to have a text carasol where the dates is fed by django. I already have this working just fine elsewhere on my project (just the simple bootstrap carasol and a forloop feeding in articles) but this one needs to be different. It needs to be pure text, which is simple, but it also needs to list multiple elements so they're on screen at the same time (rather than just clicking the next/previous button and seeing a new one).
+
+This is what I'm trying to recreate:
+
+http://www.espncricinfo.com/ci/engine/series/index.html?view=month
+
+a simple date range with a few months before and after the current (active) month.
+
+this is the bit of code I've tried to modify:
+
+https://codepen.io/kamdav/pen/Cdepa?page=1&
+
+as you can see, it hardcodes the number of slides it has in it which is not what I need.
+
+I've done the vast majority of my project with only a few problems, all of which I've been able to work through, but this one has stumped me. The only thing I know (I think haha) is that I would be better off doing this from scratch rather than trying to modify the codepen above

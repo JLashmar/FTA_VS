@@ -1,0 +1,7 @@
+requests
+patch
+VimeoBackendTestCase
+TestCase
+BackendTestMixin
+VideoDoesntExistException
+VimeoBackend

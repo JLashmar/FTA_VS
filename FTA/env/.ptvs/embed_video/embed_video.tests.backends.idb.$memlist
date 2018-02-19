@@ -1,0 +1,7 @@
+tests_vimeo
+tests_videobackend
+BackendTestMixin
+tests_soundcloud
+tests_custom_backend
+detect_backend
+tests_youtube

@@ -1,0 +1,10 @@
+ResendActivationView
+permission_required
+ActivationView
+RegistrationView
+ApprovalView
+url
+TemplateView
+urlpatterns
+include
+settings

@@ -1,0 +1,13 @@
+mail
+RequestFactory
+UserModel
+TestCase
+RegistrationView
+datetime
+AnonymousUser
+override_settings
+DefaultBackendViewTests
+RegistrationProfile
+RegistrationForm
+reverse
+settings
