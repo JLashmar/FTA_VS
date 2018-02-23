@@ -1,16 +1,19 @@
-  <li class="nav-item dropdown">
+{% if country_selector %}
+    <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Country
   </a>
   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
     <ul>
-      {% for country in country_selector %}
+      {% for country in country_selector|dictsort:"name" %}
         <li>
-          <a href="{% url 'articles:country' sport_menu.sport_slug country.country_slug %}">
-          <img class="small_flag" src="{{country.flag.url}}" alt="{{country.name}}">{{country.name}}
+          <a href="{% url 'sports:national-home' sport_menu.sport_slug country.country_slug %}">
+          <img class="small_flag" src="" alt="">{{country}}
           </a>
         </li>
       {% endfor %}
     </ul>
   </div>
+</li>
 
+{% endif %}

@@ -6,14 +6,12 @@
     <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'sports:sport-home' sport_menu.sport_slug %}">{{sport_menu.name}} |</a>
+        <a class="nav-link" href="{{get_absolute_url}}">{{sport_menu.name}} |</a>
       </li>
       {% include "submenu/country.html" %}
       {% include "submenu/competition.html" %}
       <li class="nav-item">
         <a class="nav-link" href="">MonthlyView</a>
-        {{sport_menu.sport_slug}}
-
       </li>
     </ul>
   </div>
@@ -22,22 +20,3 @@
 {% else %}
 {% endif %}
 {% endblock %}
-
-{% url 'articles:country' sport_menu.sport_slug item.country_slug %}
-
-#previous
-{% url 'articles:country' sport_menu.sport_slug country.grouper.country.name %}
-
-{% for nation in country %}
-<ul>
-  <li>{{nation.title}} - {{nation.post_category}}</li>
-  {% regroup nation.country_slug.all by name as country_list %}
-  {% for country in country_list %}
-    {% for item in country.list %}
-    <a href="">
-    <li>{{item}}</li>
-    </a>
-    {% endfor %}
-  {% endfor %}
-</ul>
-{% endfor %}

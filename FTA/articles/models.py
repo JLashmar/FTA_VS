@@ -8,13 +8,15 @@ from embed_video.fields import EmbedVideoField
 
 # Create your models here.
 
+
 def get_upload_path(instance, filename):
     return "%s/%s/%s" % (instance.post_category.name, instance.team_a.team_name, filename)
+
 
 class Post(models.Model):
     title = models.CharField(max_length=100, unique=False)
     post_slug = models.SlugField(max_length=100, unique=True)
-    post_category = models.ForeignKey(Sport, related_name='post_category',on_delete=models.CASCADE)
+    post_category = models.ForeignKey(Sport, related_name='post_category', on_delete=models.CASCADE)
     team_a = models.ForeignKey('teams.Team', related_name='first_team', on_delete=models.CASCADE, blank=True, null=True)
     team_b = models.ForeignKey('teams.Team', related_name='second_team', on_delete=models.CASCADE, blank=True, null=True)
     short_description = models.CharField(max_length=150, blank=True, null=True)
@@ -28,13 +30,14 @@ class Post(models.Model):
     posted = models.DateTimeField(db_index=True, auto_now_add=True)
 
     class Meta:
-       ordering = ['-posted']
+        ordering = ['-posted']
 
     def __str__(self):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('articles:detail', kwargs={'sport_slug':self.post_category.sport_slug, 'post_slug':self.post_slug})
+        return reverse('articles:detail', kwargs={'sport_slug': self.post_category.sport_slug, 'post_slug': self.post_slug})
+
 
 class VideoNews(models.Model):
     title = models.CharField(max_length=100, unique=True)

@@ -4,8 +4,10 @@
   <div class="row">
     <div class="post-body">
       {% if post.headline_image %}
-      <div class="img col-12 mt-3"><img class="float-left article-img" src="{{ post.headline_image.url }}" alt="{{post.title}}"></div>
+      <div class="img col-10 offset-1 mt-3">
+        <img class="float-left article-img" src="{{ post.headline_image.url }}" alt="{{post.title}}">
         <p class="pr-3 text-right">Credit: {{post.headline_image_credit}}</p>
+      </div>
       {% endif %}
         <div class="main-body p-3">
           <h1 class="text-center">{{ post.title }}</h1>

@@ -54,10 +54,16 @@
     <Compile Include="articles\views.py" />
     <Compile Include="articles\__init__.py" />
     <Compile Include="athletes\admin.py" />
+    <Compile Include="athletes\api\serializers.py" />
+    <Compile Include="athletes\api\urls.py" />
+    <Compile Include="athletes\api\views.py" />
     <Compile Include="athletes\apps.py" />
     <Compile Include="athletes\migrations\__init__.py" />
     <Compile Include="athletes\models.py" />
     <Compile Include="athletes\tests.py" />
+    <Compile Include="athletes\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="athletes\views.py" />
     <Compile Include="athletes\__init__.py" />
     <Compile Include="context_processors\menu\context_processors.py">
@@ -102,7 +108,9 @@
     <Folder Include="articles\api\" />
     <Folder Include="articles\templates\" />
     <Folder Include="articles\templates\articles\" />
+    <Folder Include="articles\templates\articles\old\" />
     <Folder Include="athletes\" />
+    <Folder Include="athletes\api\" />
     <Folder Include="athletes\migrations\" />
     <Folder Include="athletes\templates\" />
     <Folder Include="context_processors\menu\" />
@@ -116,6 +124,7 @@
     <Folder Include="nations\templates\" />
     <Folder Include="nations\__pycache__\" />
     <Folder Include="sports\" />
+    <Folder Include="sports\api\" />
     <Folder Include="sports\migrations\" />
     <Folder Include="C:\Users\Jordan\source\repos\FTA\FTA\sports\api\" />
     <Folder Include="sports\templates\" />
@@ -162,6 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="articles\templates\articles\index.html" />
+    <Content Include="articles\templates\articles\old\index.html" />
     <Content Include="athletes\templates\index.html" />
     <Content Include="nations\migrations\__pycache__\0001_initial.cpython-36.pyc" />
     <Content Include="nations\migrations\__pycache__\0002_auto_20171230_1217.cpython-36.pyc" />

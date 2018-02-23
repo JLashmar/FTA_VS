@@ -4,6 +4,7 @@ from sports.models import Sport
 
 # Create your models here.
 
+
 class Team(models.Model):
   sport = models.ForeignKey('sports.Sport', on_delete=models.CASCADE)
   #country = CountryField()
@@ -16,23 +17,23 @@ class Team(models.Model):
       (MEN, 'Men'),
       (WOMEN, 'Women'),
       (MIXED, 'Mixed'),
-      )
+  )
   gender = models.CharField(
-        max_length=5,
-        choices=GENDER_CHOICES,
-        default=MEN,
-        )
+      max_length=5,
+      choices=GENDER_CHOICES,
+      default=MEN,
+  )
   INTERNATIONAL = 'International'
   DOMESTIC = 'Domestic'
   TIER_CHOICES = (
       (INTERNATIONAL, 'International'),
       (DOMESTIC, 'Domestic')
-      )
+  )
   tier = models.CharField(
-        max_length=13,
-        choices=TIER_CHOICES,
-        default=MEN,
-        )
+      max_length=13,
+      choices=TIER_CHOICES,
+      default=MEN,
+  )
 
   def __str__(self):
     return "%s: %s - %s" % (self.sport, self.team_name, self.gender)
