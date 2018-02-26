@@ -172,7 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".ebextensions\db-migrate.config" />
-    <Content Include=".ebextensions\Default-Environment.config" />
+    <Content Include=".ebextensions\FTA.config" />
     <Content Include="articles\templates\articles\index.html" />
     <Content Include="articles\templates\articles\old\index.html" />
     <Content Include="athletes\templates\index.html" />
