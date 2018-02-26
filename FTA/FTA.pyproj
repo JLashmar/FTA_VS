@@ -123,6 +123,7 @@
     <Folder Include="nations\migrations\__pycache__\" />
     <Folder Include="nations\templates\" />
     <Folder Include="nations\__pycache__\" />
+    <Folder Include="C:\Users\Jordan\source\repos\FTA\FTA\.ebextensions\" />
     <Folder Include="sports\" />
     <Folder Include="sports\api\" />
     <Folder Include="sports\migrations\" />
@@ -170,6 +171,7 @@
     <Folder Include="templates\submenu\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".ebextensions\settings.config" />
     <Content Include="articles\templates\articles\index.html" />
     <Content Include="articles\templates\articles\old\index.html" />
     <Content Include="athletes\templates\index.html" />
