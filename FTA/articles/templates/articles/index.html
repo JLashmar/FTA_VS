@@ -15,17 +15,17 @@
         <div class="carousel-inner" role="listbox">
 
           {% for post in all_posts|slice:":5"%}
-            {% if post.headline_image %}
-            <div class="carousel-item {% if forloop.counter == 1 %}active{% endif %}" id="slide{{ forloop.counter }}">
-              <a href="{{ post.get_absolute_url }}">
-              <img class="d-block img-fluid" src="{{ post.headline_image.url }}" alt="First slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>{{ post.title }}</h3>
-                <p>{{ post.short_description }}</p>
-              </div>
-              </a>
+          {% if post.headline_image %}
+          <div class="carousel-item {% if forloop.counter == 1 %}active{% endif %}" id="slide{{ forloop.counter }}">
+            <a href="{{ post.get_absolute_url }}">
+            <img class="d-block img-fluid" src="{{ post.headline_image.url }}" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>{{ post.title }}</h3>
+              <p>{{ post.short_description }}</p>
             </div>
-            {% endif %}
+            </a>
+          </div>
+          {% endif %}
           {% endfor %}
 
 

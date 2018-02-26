@@ -11,7 +11,7 @@ from django.views.generic.list import ListView
 
 class SportView(ListView):
     template_name = "articles/index.html"
-    context_object_name = 'sport_list'
+    context_object_name = 'all_posts'
 
     def get_context_data(self, **kwargs):
         context = super(SportView, self).get_context_data(**kwargs)
@@ -26,7 +26,7 @@ class SportView(ListView):
 
 class NationView(ListView):
     template_name = "articles/index.html"
-    context_object_name = 'sport_list'
+    context_object_name = 'all_posts'
 
     def get_context_data(self, **kwargs):
         context = super(NationView, self).get_context_data(**kwargs)
