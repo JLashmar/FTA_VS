@@ -171,7 +171,7 @@
     <Folder Include="templates\submenu\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".ebextensions\settings.config" />
+    <Content Include=".ebextensions\django.config" />
     <Content Include="articles\templates\articles\index.html" />
     <Content Include="articles\templates\articles\old\index.html" />
     <Content Include="athletes\templates\index.html" />
