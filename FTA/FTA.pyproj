@@ -171,6 +171,7 @@
     <Folder Include="templates\submenu\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".ebextensions\db-migrate.config" />
     <Content Include=".ebextensions\django.config" />
     <Content Include="articles\templates\articles\index.html" />
     <Content Include="articles\templates\articles\old\index.html" />
