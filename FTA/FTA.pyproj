@@ -103,6 +103,7 @@
     <Compile Include="teams\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include=".ebextensions\" />
     <Folder Include="articles\" />
     <Folder Include="articles\migrations\" />
     <Folder Include="articles\api\" />
