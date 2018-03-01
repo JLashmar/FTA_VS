@@ -1,0 +1,11 @@
+﻿branch-defaults:
+  develop:
+    environment: deployment
+  master:
+    environment: master
+global:
+  application_name: FTA
+  default_ec2_keyname: aws-eb-key
+  default_region: eu-west-2
+  profile: null
+  sc: git

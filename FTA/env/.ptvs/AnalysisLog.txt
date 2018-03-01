@@ -20907,3 +20907,7 @@ File name: 'c:\users\jordan\source\repos\fta\fta\env\lib\site-packages\registrat
 2018-02-19T12:21:49: Saving group "c:\users\jordan\source\repos\fta\fta\env\lib\site-packages\rest_framework_jwt"
 2018-02-19T12:21:49: End of group "c:\users\jordan\source\repos\fta\fta\env\lib\site-packages\rest_framework_jwt"
 2018-02-19T12:21:51: Deleting 0 files
+
+2018-03-01T10:26:56: Start analysis
+2018-03-01T10:26:56: IncludeModulesFromModulePath = win32com
+2018-03-01T10:26:58: Deleting 0 files
