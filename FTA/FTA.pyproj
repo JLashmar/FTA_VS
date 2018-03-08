@@ -103,7 +103,6 @@
     <Compile Include="teams\__init__.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include=".ebextensions\" />
     <Folder Include="articles\" />
     <Folder Include="articles\migrations\" />
     <Folder Include="articles\api\" />
@@ -124,12 +123,10 @@
     <Folder Include="nations\migrations\__pycache__\" />
     <Folder Include="nations\templates\" />
     <Folder Include="nations\__pycache__\" />
-    <Folder Include="C:\Users\Jordan\source\repos\FTA\FTA\.ebextensions\" />
     <Folder Include="sports\" />
     <Folder Include="sports\api\" />
     <Folder Include="sports\migrations\" />
     <Folder Include="C:\Users\Jordan\source\repos\FTA\FTA\sports\api\" />
-    <Folder Include="C:\Users\Jordan\source\repos\FTA\FTA\.elasticbeanstalk\" />
     <Folder Include="sports\templates\" />
     <Folder Include="sports\templates\sports\" />
     <Folder Include="static\" />
@@ -173,9 +170,6 @@
     <Folder Include="templates\submenu\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".ebextensions\db-migrate.config" />
-    <Content Include=".ebextensions\django.config" />
-    <Content Include=".elasticbeanstalk\config.yml" />
     <Content Include="articles\templates\articles\index.html" />
     <Content Include="articles\templates\articles\old\index.html" />
     <Content Include="athletes\templates\index.html" />

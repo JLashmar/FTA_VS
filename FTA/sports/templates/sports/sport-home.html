@@ -14,7 +14,7 @@
 
         <div class="carousel-inner" role="listbox">
 
-          {% for post in all_posts|slice:":5"%}
+          {% for post in sport_list|slice:":5"%}
           {% if post.headline_image %}
           <div class="carousel-item {% if forloop.counter == 1 %}active{% endif %}" id="slide{{ forloop.counter }}">
             <a href="{{ post.get_absolute_url }}">
@@ -51,7 +51,7 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
         <div class="top-title d-flex justify-content-center"><h3 class="gold-text">Top Headlines</h3></div>
-        {% for post in all_posts|slice:":5"%}
+        {% for post in sport_list|slice:":5"%}
         {% if not post.headline_image %}
           <a href="{{post.get_absolute_url}}">
             <h5>{{ post.title }}</h5>
@@ -68,7 +68,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-8">
           <div class="row">
-            {% for post in all_posts|slice:"5:" %}
+            {% for post in sport_list|slice:"5:" %}
             {% if post.headline_image %}
               <div class="card article-card ml-3 mt-5" style="width: 20rem;">
                 <a href="{% url 'articles:detail' post.post_category.sport_slug post.post_slug %}">
@@ -97,7 +97,7 @@
         </script>
         <div class="top-title d-flex justify-content-center"><h3 class="gold-text">Video News</h3></div>
 
-        {% for video in all_posts %}
+        {% for video in sport_list %}
           {% if video.youtube_link %}
           <h5>{{video.title}} - <small><a href="{{video.get_absolute_url}}">Read More</a></small></h5>
           <iframe width="100%" height="20%" src="{{video.youtube_link}}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
