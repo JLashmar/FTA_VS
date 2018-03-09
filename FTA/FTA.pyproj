@@ -104,6 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".ebextensions\" />
+    <Folder Include=".elasticbeanstalk\" />
     <Folder Include="articles\" />
     <Folder Include="articles\migrations\" />
     <Folder Include="articles\api\" />
