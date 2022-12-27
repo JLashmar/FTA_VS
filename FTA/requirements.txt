@@ -25,7 +25,7 @@ PyYAML==3.12
 requests==2.18.4
 rsa==3.4.2
 s3transfer==0.1.12
-setuptools==28.8.0
+setuptools==65.5.1
 six==1.11.0
 urllib3==1.22
 virtualenv==15.1.0
